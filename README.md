@@ -73,11 +73,13 @@ You can select other triggers for your analysis by accessing the ROOT file using
 
 ### Running the analysis for the proton-proton dataset:
 
-To run events from reference proton-proton collisions, you only need to change the input files, the JSON file, and replace `datasetName = cms.string("HIDiMuon")` in the hiforestanalyzer.py file with `datasetName = cms.string("AllPhysics2760")` and following all those steps again you will produce a plot like this for de pp reference: 
+To run events from reference proton-proton collisions, you only need to change the input files, the JSON file, and replace `datasetName = cms.string("HIDiMuon")` in the hiforestanalyzer.py file with `datasetName = cms.string("AllPhysics2760")` and following all those steps again and running the file for the proton-proton like this:
 
 ```
 root -l forest2dimuon_2011pp_mass.C
 ```
+
+You will produce this plot:
 
 <p align="center">
   <img src="forest2dimuon/diMuon_mass_2011_PbPb_1.png" alt="Texto Alternativo" width="700">
