@@ -28,7 +28,7 @@ void forest2dimuon(
 	TTree *HltTree = (TTree*)f1->Get("hltanalysis/HltTree");
 	TTree *MuTree = (TTree*)f1->Get(Form("%s/Muons",Collection.Data()));
 	TCanvas *c1 = new TCanvas("c1","DiMuone",1200,800);
-	TH1F *dimu_h = new TH1F("","", 2000, 0.25, 200.25);
+	TH1F *dimu_h = new TH1F("","", 100, 0, 100);
 	dimu_h->SetStats(kFALSE);
         dimu_h->GetXaxis()->SetTitle("m_{#mu#mu}[GeV/c^{2}]"); 
         dimu_h->GetYaxis()->SetTitle("Events/(0.1 GeV/c^{2})");
@@ -36,8 +36,6 @@ void forest2dimuon(
         c1->SetFrameLineColor(1);
         c1->SetFrameFillColor(0);
 	c1->SetFillColor(10);
-	//c1->SetLogx();
-	c1->SetLogy();
 	dimu_h->Sumw2();
 	MuTree->AddFriend(HltTree);
 	Int_t           trigBit;
