@@ -68,7 +68,7 @@ root -l forest2dimuon_2010PbPb_mass.C
 and produce a plot like this: 
 
 <p align="center">
-  <img src="forest2dimuon/diMuon_mass_2011_PbPb_1.png" alt="Texto Alternativo" width="700">
+  <img src="forest2dimuon/diMuon_mass_2010_PbPb_1.png" alt="Texto Alternativo" width="700">
 </p>
 
 You can select other triggers for your analysis by accessing the ROOT file using `TBrowser b` in ROOT and checking the Trigger Tree.
