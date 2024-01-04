@@ -1,5 +1,3 @@
-# HIOpenData2015
-
 ## Instructions
 
 ### Preparing the container:
