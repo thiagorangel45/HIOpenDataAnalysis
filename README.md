@@ -1,4 +1,4 @@
-# HiOpenData2015
+# HIOpenData2015
 
 ## Instructions
 
